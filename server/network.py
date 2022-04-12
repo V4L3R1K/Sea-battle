@@ -10,11 +10,13 @@ KEEP_ALIVE = 4
 # response
 OK = 5
 FAILED_TO_CONNECT = 6
-BAD_PASSWORD = 7
+WRONG_PASSWORD = 7
 USER_ALREADY_SIGNED_IN = 8
 USER_ALREADY_EXISTS = 9
 
 HEADER = 4  # bytes
+
+DISCONNECT_TIMEOUT = 5  # seconds
 
 
 def send(conn: socket, data: str):
